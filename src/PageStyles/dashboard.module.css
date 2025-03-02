@@ -983,6 +983,7 @@ input[type="checkbox"] {
   top: 0%;
   z-index: 50;
   background-color: #fff;
+  display: none;
 }
 
 .Mobtopnav .logo {
@@ -1055,5 +1056,8 @@ input[type="checkbox"] {
     font-size: 12px;
     bottom: -30%;
     right: 11%;
+  }
+  .Mobtopnav {
+    display: flex;
   }
 }
