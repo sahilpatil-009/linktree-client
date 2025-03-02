@@ -1,0 +1,197 @@
+.main {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    /* border: 1px solid black; */
+    padding: 10px 40px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+  .main h3{
+    margin-bottom: 0px;
+    color: #29A263;
+    width: 120px;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 3px solid #29A263;
+  }
+
+  .main hr{
+    border: .2px solid #d1d1d1;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .userInputes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btnDiv{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: flex-end;
+  }
+  .uInput input {
+    all: unset;
+    width: 60%;
+    padding: 8px 8px;
+    border: 1px solid #000;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+  
+  .uInput p {
+    margin: 0;
+    color: #666666;
+    font-size: 15px;
+  }
+  
+  .uInput .inpurError {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .uInputcheck {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  
+  .uInputcheck input[type="checkbox"] {
+    accent-color: #000;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .uInputcheck p {
+    font-size: 14px;
+    color: #3d3d3d;
+  }
+  
+  .uInputcheck p span {
+    text-decoration: underline;
+  }
+  
+  .createBtn {
+    background-color: #28a263;
+    width: 180px;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 13px;
+    cursor: pointer;
+    float:right;
+  }
+  
+  /* cover image */
+  .cover {
+    width: 30%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .imageSection {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imageSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .footerMsg p {
+    font-size: 14px;
+    color: #676b5f;
+  }
+  
+  .footerMsg p span {
+    text-decoration: underline;
+  }
+  
+  /* login page styles */
+  .loginContainer {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .loginForm {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .loginForm h1 {
+    font-size: 48px;
+    font-weight: 800;
+  }
+  
+  .userinput {
+    all: unset;
+    padding: 15px 15px;
+    width: 95%;
+    font-size: 16px;
+    background-color: #eff0ec;
+    border-radius: 6px;
+  }
+  
+  .userPassed {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #eff0ec;
+    border-radius: 6px;
+  }
+  
+  .userPassed input {
+    width: 90%;
+  }
+  
+  .loginbtn {
+    padding: 12px 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background-color: #eff0ec;
+    color: #676b5f;
+    border-radius: 20px;
+  }
+  
+  .useroptions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .useroptions a {
+    color: #28a263;
+  }
+  
+  .loginErr {
+    color: red;
+    font-size: 12px;
+    margin: 0;
+  }
+  

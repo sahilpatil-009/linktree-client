@@ -1,0 +1,188 @@
+.main {
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    font-family: "Open Sans";
+    overflow: hidden;
+    z-index: 100;
+    /* display: none; */
+}
+
+.container {
+    background-color: #fff;
+    width: 35%;
+    height: 450px;
+    border-radius: 12px;
+    font-family: "poppins";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.AddLinks{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.AddLinks div{
+    margin: 20px;
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #f3f3f1;
+}
+
+.AddLinks div button{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 5px;
+    gap: 1px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.AddLinkTrue{
+    background-color: #35CA7D;
+    color: #fff;
+}
+
+.AddLinkFalse{
+    background: transparent;
+    color: #676B5F;
+}
+
+.UrlContainer{
+    width: 90%;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    /* margin: 20px; */
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.ShopContainer{
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    /* margin: 20px; */
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+
+.UrlContainer h3{
+    margin: 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* switch button */
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    background-color: #676B5F;
+    border-radius: 20px;
+}
+
+.switch::after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .3s linear;
+}
+
+input[type="checkbox"]:checked + .switch::after{
+    translate:10px 0px;
+}
+input[type="checkbox"]:checked + .switch{
+    background-color: #03a426;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+.linkTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
+.linkTitle input{
+    padding: 14px 14px;
+    font-size: 15px;
+    width: 80%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #F6F7F5;
+}
+
+.linkTitle button{
+    all: unset;
+    cursor: pointer;
+    color: #676B5F;
+}
+
+/* .applications{} */
+
+.applications h3{
+    color: #676B5F;
+    font-size: 16px;
+}
+.appContainers{
+    display: flex;
+    margin: 20px;
+    gap: 15px;
+}
+
+.appContainers .appIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.appContainers .appIcons p{
+    font-size: 10px;
+}
+.appContainers .appIcons div{
+    width: 50px;
+    height: 50px;
+    background-color:#EFEFEF;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.appContainers .appIcons div img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}

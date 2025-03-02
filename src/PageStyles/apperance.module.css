@@ -1,0 +1,299 @@
+.layoutCont{
+    width: 90%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.layoutCont h2{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.layoutSetting{
+    width: 100%;
+    min-height: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.layoutSetting button{
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    background-color: #F6F7F5;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.buttonsCont{
+    width: 90%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.buttonsCont h2{
+    font-weight: 600;
+}
+
+.buttonSetting{
+    width: 100%;
+    /* min-height: 200px; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fillBtn{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Btnstyles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* fill btn style */
+.Btnstyles button{
+    padding: 10px 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.btnStylOne{
+    background-color: #000;
+}
+
+.btnStylTwo{
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.btnStylThree{
+    background-color: #000;
+    border-radius: 20px;
+}
+
+/* outline style */
+
+.OutlineOne,.OutlineTwo,.OutlineThree{
+    border: 2px solid black;
+    background-color: #fff;
+}
+
+.OutlineTwo{
+    border-radius: 10px;
+}
+
+.OutlineThree{
+    border-radius: 20px;
+}
+
+/* hard shadow style */
+
+.shadowOne, .shadowTwo,.shadowThree{
+    background-color: #fff;
+}
+.shadowSoftOne, .shadowSoftTwo,.shadowSoftThree{
+    background-color: #fff;
+}
+
+.shadowTwo,.shadowSoftTwo{
+    border-radius: 10px;
+}
+.shadowThree,.shadowSoftThree{
+    border-radius: 20px;
+}
+
+.shadowOne, .shadowTwo,.shadowThree{
+    box-shadow: 5px 5px #000;
+}
+
+.shadowSoftOne, .shadowSoftTwo,.shadowSoftThree{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px; 
+    outline: none;
+    border: none;
+    
+}
+
+
+
+.uniqueColors{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* border: 1px solid black; */
+}
+
+.headline{
+    font-weight: 600;
+}
+
+/* unique colors */
+.uniqueColors div{
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+
+.uniqueColors div div{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #000;
+    cursor: pointer;
+    display: flex;
+    border: 2px solid #f3f3f1;
+}
+
+
+.uniqueColors input{
+    padding: 10px 10px;
+    font-size: 16px;
+    width: 30%;
+    outline: none;
+    border: none;
+    background-color: #f3f3f1;
+    border-radius: 10px;
+}
+
+
+.fontsSettng{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+.fontsSettng h2{
+    font-weight: 600;
+}
+
+.fontsSettngCont{
+    width: 100%;
+    min-height: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* border: 1px solid black; */
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    /* padding: 20px; */
+}
+
+.fontuserSetings{
+    width: 90%;
+    /* border: 1px solid black; */
+}
+
+.selectfonts{
+    border: 2px solid #e7e7e3;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.uniqFont{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f3f3f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #f3f3f1;
+    color: #212529;
+    cursor: pointer;
+}
+
+.userFonts{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border: 2px solid #f3f3f1;
+    border-radius: 10px;
+    font-family: "DM Sans";
+}
+
+/* Themes style */
+.themesCont{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.themesCont h2{
+    font-weight: 600;
+}
+
+.themeSettings{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.themeSettings .themeBoxs{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    gap: 20px;
+    /* padding-left: 50%; */
+}
+
+.themeBox{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.themeBox img{
+    border-radius: 10px;
+    cursor: pointer;
+}

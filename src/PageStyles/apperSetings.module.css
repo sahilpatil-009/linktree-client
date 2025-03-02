@@ -1,0 +1,202 @@
+.SquareFill{
+    background-color: #000;
+    border-radius: 0px;
+    color: #fff;
+}
+
+.SemiCylinderFill{
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.CylinderFill{
+    background-color: #000;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.SquareOutline{
+    border: 1px solid black;
+    border-radius: none !important;
+    box-shadow:0px;
+}
+
+.SemiCylinderOutline{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.CylinderOutline{
+    border: 1px solid black;
+    border-radius: 20px;
+    /* font-family: Courier; */
+}
+
+.SquareShadow{
+    box-shadow: 5px 5px #000;
+    /* border: 0px; */
+    border-radius: 0px;
+}
+
+.SemiCylinderShadow{
+    box-shadow: 5px 5px #000;
+    border-radius: 10px;
+}
+
+.CylinderShadow{
+    box-shadow: 5px 5px #000;
+    border-radius: 20px;
+}
+
+.SquareSoftShadow{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px; 
+    border-radius: 0px;
+}
+
+.SemiCylinderSoftShadow{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px; 
+    border-radius: 10px;
+}
+
+.CylinderSoftShadow{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px; 
+}
+
+/* Themes */
+.AirSnow{
+    background-color: #fff;
+}
+
+.AirGray{
+    background-color: #E8E8E8;
+}
+
+.AirSmoke{
+    background-color: #1d2a35;
+}
+
+.AirBlack{
+    background-color: #333;
+}
+
+.MineralBlue{
+    /* background-color: #BAD4DF; */
+    background-color: rgba(154, 205, 227, 0.40);
+}
+
+.MineralGreen{
+    /* background-color: #ADEBB3; */
+    background-color: rgba(173, 235, 179, 0.40);
+}
+
+.MineralOrange{
+    /* background-color: #FFD3AC; */
+    background-color: rgba(255, 211, 172, 0.40);
+}
+
+/* Gird Layout */
+/* from here  */
+
+.GridCont{
+    width: 95%;
+    height: 70%;
+    overflow: auto;
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    scrollbar-width: none;
+}
+.GridLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    align-items: center;
+    background-color: #C9C9C9;
+    padding: 0px 5px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.Gridpara{
+    margin: 15px 5px;
+    font-size: 14px;
+    overflow: hidden;
+    width: 100%;
+    word-break: break-all;
+}
+
+.GridLogo{
+    width: 90px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.Gridimg{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+/* till here  */
+
+/* Craousal Styling here */
+.CarouselCont{
+    width: 95%;
+    height: 70%;
+    overflow: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 10px;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.CarouseltLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    gap: 10px;
+    background-color: #C9C9C9;
+    padding: 0px 5px;
+    border-radius: 25px;
+}
+
+.Carouselpara{
+    font-size: 16px;
+    font-weight: 500;
+    height: 35%;
+    width: 85%;
+    overflow: hidden;
+    word-wrap:break-word;   
+}
+
+.CarouselLogo{
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.Carouselimg{
+    width: 65%;
+    height: 65%;
+    object-fit: contain;
+}

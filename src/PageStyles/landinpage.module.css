@@ -1,0 +1,961 @@
+body,
+html {
+  overflow-x: hidden;
+}
+.main {
+  background-color: #fafafa;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headnav {
+  height: 12%;
+  width: 95%;
+  border: 1px solid #e0e2d9;
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 50%;
+  object-fit: contain;
+  padding-right: 2px;
+  padding-bottom: 10px;
+}
+
+.logo h2 {
+  border-right: 1px solid black;
+  padding-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.logo h2 span {
+  font-size: 0.6em;
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.logo img {
+  height: 100%;
+  object-fit: contain;
+}
+.logo p {
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.logo h2 {
+  border-right: 1px solid black;
+  padding-right: 5px;
+}
+
+.signButton {
+  height: 50px;
+  width: 10%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #28a263;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.heroSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.herotop {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.herotopinfo {
+  margin-top: 50px;
+  min-width: 300px;
+}
+
+.herotop .herotopinfo h1 {
+  font-size: 50px;
+  line-height: 55px;
+  margin-bottom: 0;
+}
+
+.herotopinfo p {
+  margin-bottom: 40px;
+}
+
+.herotopinfo button {
+  height: 50px;
+  width: 30%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #28a263;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.herotop .imageDiv {
+  width: 50%;
+  height: 50%;
+  /* border: 1px solid black; */
+  /* height: 100%; */
+  overflow: hidden;
+}
+
+.imageDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* second hero */
+.heroSecond {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid black  ; */
+}
+
+.secondBanner {
+  width: 40%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.secondBanner img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.secondInfo {
+  width: 40%;
+}
+
+.secondInfo h1 {
+  font-size: 40px;
+}
+
+/* third hero section */
+.heroThird {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.thirdBanner {
+  height: 100%;
+  width: 50%;
+  background-color: #c6c6c6;
+  border-radius: 22px;
+}
+
+.thirdBannerImgDiv {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thirdBannerImgDiv img {
+  width: 20%;
+  height: 80%;
+  object-fit: contain;
+}
+.thirdBannerImgDiv img:nth-child(3) {
+  width: 30%;
+}
+
+.thirdBanner p {
+  height: 40%;
+  font-size: 28px;
+  color: #fff;
+  padding-left: 10%;
+}
+
+/* heroc fourth section */
+.heroFour {
+  margin-top: 50px;
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.herofourhedline {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.herofourhedline h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.herofourhedline h1 span {
+  color: #28a263;
+}
+
+.herofourhedline button {
+  height: 50px;
+  width: 30%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: #fff;
+  border: 2px solid #28a263;
+  color: #28a263;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.herofourInfo {
+  width: 40%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.herofourInfo p {
+  margin: 0;
+  font-size: 12px;
+}
+
+/* hero five */
+
+.heroFive {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.girdtestmonilas {
+  width: 95%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 30px;
+  align-items: stretch;
+}
+
+.testimonials {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 24px;
+}
+
+.testimonials h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.testimonials p {
+  font-size: 15px;
+}
+
+.testimonials:nth-child(1),
+.testimonials:nth-child(4) {
+  background-color: #c6c6c6;
+}
+.testimonials:nth-child(2),
+.testimonials:nth-child(3) {
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.avtar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avtar div {
+  width: 40px;
+  height: 40px;
+  background-color: #28a263;
+  border-radius: 50%;
+}
+
+.avtar p {
+  font-size: 14px;
+}
+
+/* hero six */
+.heroSix {
+  width: 94%;
+  margin-top: 5%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.heroSix h1 {
+  font-size: 40px;
+}
+
+.heroSixGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 50px;
+}
+
+.Integ {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.IntegName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.IntegName h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+.IntegName p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* footer */
+
+.footerLanding {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  width: 90%;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 22px;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(40, 162, 99, 0.5) 5px 5px 60px;
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.OptinList li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bottomOptn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottomOptn p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.bottomOptn div {
+  display: flex;
+  gap: 30px;
+}
+
+.footerBtns {
+  width: 20%;
+  display: flex;
+  gap: 10px;
+}
+
+.footerLogin {
+  height: 50px;
+  width: 30%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #000;
+  background-color: #eff0ec;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.footerSignUp {
+  height: 50px;
+  width: 50%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #28a263;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.adminBtn {
+  height: 50px;
+  width: 20%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #28a263;
+  background-color: #eff0ec;
+  border-radius: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.adminBtnfoot{
+  height: 50px;
+  width: 20%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #28a263;
+  background-color: #eff0ec;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.footerBtnsResponsive{
+  display: none;
+}
+
+.burgerBar {
+  display: none;
+  margin-right: "10px";
+}
+
+.bottomOptn .footerDownbtns{
+  display: none;
+}
+
+/* Add Responsive styling */
+
+@media only screen and (max-width: 720px) {
+  .logo h2,
+  .logo p {
+    display: none;
+  }
+  .signButton {
+    height: 50px;
+    margin: 10px;
+    width: 20%;
+  }
+  .adminBtn {
+    display: block;
+  }
+  .burgerBar {
+    display: block;
+  }
+  .headnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logo img {
+    height: 90%;
+    object-fit: contain;
+    padding-right: 2px;
+    padding-bottom: 10px;
+  }
+
+  .herotop {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .herotopinfo {
+    margin-top: 20px;
+  }
+
+  .herotop .herotopinfo h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .herotopinfo p {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .herotop .imageDiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .imageDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .heroSecond {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .secondBanner {
+    width: 90%;
+    height: 300px;
+  }
+
+  .secondBanner img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .secondInfo {
+    width: 80%;
+  }
+
+  .secondInfo h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  /* third hero section */
+  .heroThird {
+    height: 600px;
+    flex-direction: column;
+  }
+
+  .thirdBannerImgDiv {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thirdBanner {
+    width: 90%;
+  }
+
+  .thirdBannerImgDiv img {
+    width: 20%;
+    height: 90%;
+    object-fit: contain;
+  }
+  .thirdBannerImgDiv img:nth-child(3) {
+    width: 30%;
+  }
+
+  .thirdBanner p {
+    height: 20%;
+    font-size: 15px;
+    color: #fff;
+    padding-left: 10%;
+  }
+
+  /* hero four */
+  .herofourhedline {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .herofourhedline button {
+    height: 50px;
+    width: 70%;
+  }
+
+  .herofourInfo {
+    display: none;
+  }
+
+  .girdtestmonilas {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 100px;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .testimonials {
+    width: 100%;
+    padding: 40px;
+  }
+
+  /* hero six */
+  .heroSix {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .heroSix h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .heroSixGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+  }
+
+  .Integ {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+
+  /* footer */
+
+  .options {
+    flex-direction: column;
+  }
+
+  .OptinList li {
+    margin-top: 10px;
+    margin-bottom: 10px;  
+  }
+
+  .bottomOptn {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .bottomOptn p {
+    display: none;
+  }
+
+  .bottomOptn div {
+    display: flex;
+    gap: 30px;
+  }
+
+  .footerBtns {
+    display: none;
+  }
+
+  .bottomOptn .footerDownbtns{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footerDownbtns .adminBtnfoot{
+    width: 100px;
+  }
+
+  .footerSignUp{
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+
+  body{
+    scrollbar-width: none;
+  }
+
+  .signButton {
+    height: 50px;
+    margin: 10px;
+    width: 30%;
+  }
+
+  .adminBtn{
+    width: 25%;
+  }
+
+  .logo img {
+    padding-bottom: 0px;
+  }
+
+  .herotopinfo button {
+    width: 50%;
+  }
+
+  .secondBanner {
+    width: 95%;
+    height: 300px;
+  }
+
+  .secondBanner img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .secondInfo {
+    width: 90%;
+  }
+
+  .secondInfo h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  /* third hero section */
+  .heroThird {
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+  }
+  .thirdBanner {
+    width: 90%;
+  }
+
+  .thirdBannerImgDiv {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thirdBannerImgDiv img {
+    width: 20%;
+    height: 90%;
+    object-fit: contain;
+  }
+  .thirdBannerImgDiv img:nth-child(3) {
+    width: 30%;
+  }
+
+  .thirdBanner p {
+    height: 30%;
+    font-size: 12px;
+  }
+
+  /* hero four */
+  .herofourhedline {
+    width: 90%;
+  }
+
+  .herofourhedline button {
+    height: 50px;
+    width: 90%;
+  }
+
+  .testimonials {
+    width: 100%;
+    height: 80%;
+    padding: 40px;
+  }
+
+  /* hero six */
+  .heroSix {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .heroSix h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .heroSixGrid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+  }
+
+  .Integ {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+
+  /* footer */
+
+  .options {
+    flex-direction: column;
+  }
+
+  .OptinList li {
+    margin-top: 10px;
+    margin-bottom: 10px;  
+  }
+
+  .bottomOptn {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .bottomOptn p {
+    display: none;
+  }
+
+  .bottomOptn div {
+    display: flex;
+    gap: 30px;
+  }
+
+  .footerBtns {
+    display: none;
+  }
+
+  .bottomOptn .footerDownbtns{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footerDownbtns .adminBtnfoot{
+    width: 100px;
+  }
+
+  .footerSignUp{
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .signButton {
+    height: 50px;
+    margin: 10px;
+    width: 40%;
+  }
+
+  .herotopinfo h1{
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .herotopinfo p{
+    font-size: 18px;
+  }
+
+  .adminBtn{
+    width: 25%;
+  }
+
+  .logo img {
+    padding-bottom: 0px;
+  }
+
+  .herotopinfo button {
+    width: 50%;
+  }
+
+  .secondBanner {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* footer */
+  .footerLanding {
+    width: 95%;
+    padding: 15px 20px;
+  }
+  .options {
+    flex-direction: column;
+  }
+
+  .OptinList li {
+    margin-top: 10px;
+    margin-bottom: 10px;  
+  }
+
+  .bottomOptn {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .bottomOptn p {
+    display: none;
+  }
+
+  .bottomOptn div {
+    display: flex;
+    gap: 10px;
+  }
+
+  .footerBtns {
+    display: none;
+  }
+
+  .bottomOptn .footerDownbtns{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footerDownbtns .adminBtnfoot{
+    width: 100px;
+  }
+
+  .footerSignUp{
+    width: 120px;
+  }
+}

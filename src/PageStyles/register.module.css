@@ -1,0 +1,366 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: auto;
+}
+
+.register {
+  width: 70%;
+  height: 90%;
+  padding: 10px;
+}
+
+.register .logo {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.register .logo h2 {
+  margin: 0;
+  font-size: 22px;
+}
+.register .logo h2 span {
+  font-size: 0.6em;
+  font-weight: 400;
+  vertical-align: super;
+}
+
+.register .logo img {
+  margin-bottom: 10px;
+}
+
+.registerContainer {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registerForm {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registerForm h1 {
+  font-size: 45px;
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.userDecide {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.userDecide h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+.userDecide a {
+  color: #28a263;
+  font-size: 14px;
+}
+
+.userInputes {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.uInput input {
+  all: unset;
+  width: 100%;
+  padding: 8px 8px;
+  border: 1px solid #c0c0c0;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+.uInput p {
+  margin: 0;
+  color: #666666;
+  font-size: 15px;
+}
+
+.uInput .inpurError {
+  color: red;
+  font-size: 12px;
+}
+
+.uInputcheck {
+  display: flex;
+  align-items: baseline;
+}
+
+.uInputcheck input[type="checkbox"] {
+  accent-color: #000;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.uInputcheck p {
+  font-size: 14px;
+  color: #3d3d3d;
+}
+
+.uInputcheck p span {
+  text-decoration: underline;
+}
+
+.createBtn {
+  background-color: #c0c0c0;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 12px 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* cover image */
+.cover {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+
+.imageSection {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footerMsg p {
+  font-size: 14px;
+  color: #676b5f;
+}
+
+.footerMsg p span {
+  text-decoration: underline;
+}
+
+/* login page styles */
+.loginContainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginForm {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.loginForm h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.userinput {
+  all: unset;
+  padding: 15px 15px;
+  width: 95%;
+  font-size: 16px;
+  background-color: #eff0ec;
+  border-radius: 6px;
+}
+
+.userPassed {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #eff0ec;
+  border-radius: 6px;
+}
+
+.userPassed input {
+  width: 90%;
+}
+
+.loginbtn {
+  padding: 12px 10px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: #eff0ec;
+  color: #676b5f;
+  border-radius: 20px;
+}
+
+.useroptions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.useroptions a {
+  color: #28a263;
+}
+
+.loginErr {
+  color: red;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 770px) {
+  .cover {
+    display: none;
+  }
+  .register {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .registerForm {
+    width: 90%;
+  }
+
+  .registerForm h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  .loginForm {
+    width: 90%;
+  }
+
+  .loginForm h1 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  *{
+    scrollbar-width: none;
+  }
+  .registerForm h1 {
+    margin-top: 20px;
+    font-size: 35px;
+  }
+
+  .userDecide {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .userDecide h2 {
+    font-size: 16px;
+    width: fit-content;
+  }
+
+  .userDecide a {
+    width: fit-content;
+  }
+
+  .userInputes {
+    width: 80%;
+  }
+  .loginForm h1{
+    margin-top: 20px;
+  }
+  .userPassed {
+    width: 104%;
+  }
+
+  .userinput{
+    font-size: 15px;
+  }
+
+  .userPassed label{
+    margin-right: 10px;
+  }
+  
+  .userPassed input {
+    width: 100%;
+    font-size: 15px;
+  }
+  .loginForm h1{
+    font-size: 25px;
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+  .loginbtn {
+    font-size: 16px;
+  }
+  .useroptions a{
+    font-size: 14px;
+  }
+  .useroptions p{
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 441px) {
+  .registerForm h1 {
+    width: fit-content;
+    text-align: center;
+    font-size: 30px;
+  }
+  .userInputes {
+    width: 90%;
+  }
+  .uInput p {
+    font-size: 14px;
+  }
+  .uInputcheck P{
+    font-size: 14px;
+  }
+  .footerMsg p{
+    font-size: 10px;
+    text-align: center;
+  }
+  .createBtn{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 396px) {
+  .registerForm h1 {
+    font-size: 25px;
+  }
+  .userDecide h2 {
+    font-size: 10px;
+  }
+  .userInputes {
+    width: 100%;
+  }
+  .registerForm h1 {
+    font-size: 20px;
+  }
+  .logo h2{
+    font-size: 10px;
+  }
+}

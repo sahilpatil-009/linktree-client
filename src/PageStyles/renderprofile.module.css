@@ -1,0 +1,11 @@
+.main {
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    font-family: "Open Sans";
+    overflow: hidden;
+    z-index: 100;
+    font-family: "Poppins";
+}
