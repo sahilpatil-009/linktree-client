@@ -51,10 +51,8 @@
 
 .buttonSetting{
     width: 100%;
-    /* min-height: 200px; */
     padding-top: 25px;
     padding-bottom: 25px;
-    /* border: 1px solid black; */
     background-color: #fff;
     border-radius: 25px;
     display: flex;
@@ -75,7 +73,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 /* fill btn style */
@@ -296,4 +293,58 @@
 .themeBox img{
     border-radius: 10px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 770px) {
+    .buttonSetting{
+        width: 100%;
+        gap: 20px;
+    }
+    .Btnstyles button{
+        padding: 10px 10px;
+        width: 140px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width: 440px) {
+    .buttonSetting{
+        width: 100%;
+        gap: 10px;
+    }
+    .Btnstyles button{
+        padding: 10px 10px;
+        width: 100px;
+        height: 40px;
+    }
+    .layoutSetting{
+        width: 100%;
+        min-height: 150px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .layoutSetting button{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .fillBtn{
+        width: 90%;
+        /* height: 200px; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .Btnstyles{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .themeSettings .themeBoxs{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
 }

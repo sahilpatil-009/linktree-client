@@ -102,10 +102,10 @@ const Analytics = () => {
       </div>
       {/* line chart */}
       <div className={styles.barGraph}>
-        <ResponsiveContainer width="100%" aspect={3}>
+        <ResponsiveContainer width="100%" aspect={2.5}>
           <LineChart
-            width={1200}
-            height={400}
+            width={400}
+            height={500}
             data={Clicksdata}
             margin={{
               top: 5,
@@ -174,25 +174,25 @@ const Analytics = () => {
         <div className={styles.siteGraph}>
           <div className={styles.piChartDiv}>
             <h3>Sites</h3>
-              <PieChart width={300} height={400}>
-                <Pie
-                  data={socailData}
-                  cx={130}
-                  cy={180}
-                  innerRadius={70}
-                  outerRadius={120}
-                  fill="#8884d8"
-                  paddingAngle={5}
-                  dataKey="value"
-                >
-                  {socailData.map((entry, index) => (
-                    <Cell
-                      key={`cell-${index}`}
-                      fill={COLORS[index % COLORS.length]}
-                    />
-                  ))}
-                </Pie>
-              </PieChart>
+            <PieChart width={300} height={400}>
+              <Pie
+                data={socailData}
+                cx={130}
+                cy={180}
+                innerRadius={70}
+                outerRadius={120}
+                fill="#8884d8"
+                paddingAngle={5}
+                dataKey="value"
+              >
+                {socailData.map((entry, index) => (
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={COLORS[index % COLORS.length]}
+                  />
+                ))}
+              </Pie>
+            </PieChart>
           </div>
           <div className={styles.pichartTable}>
             {socailData &&
@@ -214,47 +214,47 @@ const Analytics = () => {
       {/* Bar charts */}
       <div className={styles.trafficbylink}>
         <div className={styles.deviceGraph}>
-        <h3>Traffic by links</h3>
-            <BarChart
-              width={600}
-              height={350}
-              data={linkTrafficData}
-              margin={{
-                top: 5,
-                right: 10,
-                left: 10,
-                bottom: 5,
-              }}
-            >
-              <CartesianGrid strokeDasharray="0 1" />
-              <XAxis dataKey="name" axisLine={false} tickLine={false} />
-              <YAxis
-                width={10}
-                axisLine={false}
-                tickLine={false}
-                padding={{ bottom: 20 }}
-              />
-              <Bar dataKey="value" barSize={40} radius={10}>
-                {" "}
-                {/* Adjust barSize for width */}
-                {linkTrafficData &&
-                  linkTrafficData.map((entry, index) => (
-                    <Cell
-                      key={`cell-${index}`}
-                      fill={
-                        [
-                          "#92FFC6",
-                          "#9BEBC1",
-                          "#165534",
-                          "#3EE58F",
-                          "#A1D4BA",
-                          "#21AF66",
-                        ][index]
-                      }
-                    />
-                  ))}
-              </Bar>
-            </BarChart>
+          <h3>Traffic by links</h3>
+          <BarChart
+            width={600}
+            height={350}
+            data={linkTrafficData}
+            margin={{
+              top: 5,
+              right: 10,
+              left: 10,
+              bottom: 5,
+            }}
+          >
+            <CartesianGrid strokeDasharray="0 1" />
+            <XAxis dataKey="name" axisLine={false} tickLine={false} />
+            <YAxis
+              width={10}
+              axisLine={false}
+              tickLine={false}
+              padding={{ bottom: 20 }}
+            />
+            <Bar dataKey="value" barSize={40} radius={10}>
+              {" "}
+              {/* Adjust barSize for width */}
+              {linkTrafficData &&
+                linkTrafficData.map((entry, index) => (
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={
+                      [
+                        "#92FFC6",
+                        "#9BEBC1",
+                        "#165534",
+                        "#3EE58F",
+                        "#A1D4BA",
+                        "#21AF66",
+                      ][index]
+                    }
+                  />
+                ))}
+            </Bar>
+          </BarChart>
         </div>
       </div>
     </div>

@@ -23,6 +23,7 @@ import { jwtDecode } from "jwt-decode";
 import { getLinkData, updateProfile } from "../services/dashboardApi";
 import { AuthUserContext } from "../Contexts/AutUserProvider";
 import toast from "react-hot-toast";
+import { PiEye, PiEyeSlashLight } from "react-icons/pi";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -55,7 +56,6 @@ const Dashboard = () => {
     }
   }, [navigate, setUserAuth]);
 
-
   const userData = jwtDecode(localStorage.getItem("token"));
 
   const [islink, setIslink] = useState(true);
@@ -68,6 +68,9 @@ const Dashboard = () => {
   const [showLogout, setShowLogout] = useState(false);
   const [showAddModel, setShowAddModel] = useState(false);
   const [userBio, setUserBio] = useState("");
+
+  const [mobilePreview, setMobilePreviw] = useState(false);
+  const [previewBtn, setPreview] = useState(false);
 
   // appearance
   const {
@@ -188,23 +191,26 @@ const Dashboard = () => {
   const handleFileChange = async (event) => {
     const file = event.target.files[0];
     if (!file) return;
-  
+
     const data = new FormData();
     data.append("file", file);
     data.append("upload_preset", "linktree_profile");
     data.append("cloud_name", "djmbp2rwt");
-  
+
     // Use toast.promise correctly
     toast.promise(
       new Promise(async (resolve, reject) => {
         try {
-          const res = await fetch("https://api.cloudinary.com/v1_1/djmbp2rwt/image/upload", {
-            method: "POST",
-            body: data,
-          });
-  
+          const res = await fetch(
+            "https://api.cloudinary.com/v1_1/djmbp2rwt/image/upload",
+            {
+              method: "POST",
+              body: data,
+            }
+          );
+
           if (!res.ok) throw new Error("Upload failed");
-  
+
           const uploadImageUrl = await res.json();
           setProfileImage(uploadImageUrl.url);
           resolve(uploadImageUrl); // Resolve with the data
@@ -371,6 +377,35 @@ const Dashboard = () => {
             </button>
           </div>
         </div>
+        <div className={styles.bottomNav}>
+          <nav className={styles.bottomnavbar}>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) => (isActive ? styles.active : "")}
+              end
+            >
+              <TfiLayoutAccordionSeparated size={25} /> Links
+            </NavLink>
+            <NavLink
+              to="/dashboard/appearance"
+              className={({ isActive }) => (isActive ? styles.active : "")}
+            >
+              <IoShapesOutline size={25} /> Appearance
+            </NavLink>
+            <NavLink
+              to="/dashboard/analytics"
+              className={({ isActive }) => (isActive ? styles.active : "")}
+            >
+              <GrAnalytics size={25} /> Analytics
+            </NavLink>
+            <NavLink
+              to="/dashboard/settings"
+              className={({ isActive }) => (isActive ? styles.active : "")}
+            >
+              <IoSettingsOutline size={25} /> Settings
+            </NavLink>
+          </nav>
+        </div>
         <div className={styles.board}>
           <div className={styles.topnav}>
             <div className={styles.userInfo}>
@@ -382,6 +417,28 @@ const Dashboard = () => {
             <button className={styles.shareBtn} onClick={handelShare}>
               <CiShare2 size={20} />
               Share
+            </button>
+          </div>
+          <div className={styles.Mobtopnav}>
+            <div className={styles.logo}>
+              <img src={Sparklogo} alt="logo" />
+              <h2>Spark</h2>
+            </div>
+            <div
+              className={styles.UProfileMob}
+              onClick={() => setShowLogout(!showLogout)}
+            >
+              <div className={styles.ProfileDiv}>
+                <img src={profileImage} />
+              </div>
+            </div>
+            <button
+              className={styles.logoutBtn}
+              style={{ display: showLogout ? "block" : "none" }}
+              onClick={handelLogout}
+            >
+              <CiLogout />
+              Sign out
             </button>
           </div>
           <div className={styles.workSpaceCont}>
@@ -549,8 +606,6 @@ const Dashboard = () => {
                   setShowAddModel={setShowAddModel}
                   bannerColor={bannerColor}
                   setBannerColor={setBannerColor}
-                  // inputColor={inputColor}
-                  // setInputColor={setInputColor}
                   fileInputRef={fileInputRef}
                   showToapp={showToapp}
                   setShowToapp={setShowToapp}
@@ -564,6 +619,11 @@ const Dashboard = () => {
               ) : (
                 <Outlet />
               )}
+            </div>
+            <div className={styles.previewBtn}>
+              <button onClick={() => setMobilePreviw(!mobilePreview)}>
+                <PiEye size={20} /> Preview
+              </button>
             </div>
           </div>
           {!isAnalytics && !isSettings && (
@@ -594,6 +654,160 @@ const Dashboard = () => {
           setshowShop={setshowShop}
           handelShopLink={handelShopLink}
         />
+      )}
+      {mobilePreview && (
+        <>
+          <div className={styles.mobilePreviewDiv}>
+            <div className={styles.previewContainerMob}>
+              <div
+                className={`${styles.preview} ${
+                  theme && stylesapp[theme] ? stylesapp[theme] : ""
+                } `}
+              >
+                <div
+                  className={styles.profileCover}
+                  style={{ backgroundColor: `${bannerColor}` }}
+                >
+                  <div className={styles.btnDiv}>
+                    <button onClick={handelCopylink}>
+                      <GoShare size={25} />
+                    </button>
+                  </div>
+                  <div className={styles.AvtarDiv}>
+                    <div className={styles.Avatar}>
+                      <img src={profileImage} />
+                    </div>
+                  </div>
+                  <div className={styles.UserName}>
+                    <p>{Username}</p>
+                  </div>
+                </div>
+                <div className={styles.linktree}>
+                  <div className={styles.actionBtns}>
+                    <button
+                      className={
+                        islink ? styles.activeBtn : styles.defautlBtnColor
+                      }
+                      onClick={() => setIslink(true)}
+                      style={{ color: btnfontColor || "" }}
+                    >
+                      link
+                    </button>
+                    <button
+                      className={
+                        islink ? styles.defautlBtnColor : styles.activeBtn
+                      }
+                      onClick={() => setIslink(false)}
+                      style={{ color: btnfontColor || "" }}
+                    >
+                      Shop
+                    </button>
+                  </div>
+                  <div className={container}>
+                    {islink
+                      ? linksArr &&
+                        linksArr.map(
+                          (item, index) =>
+                            item.showToapp && (
+                              <div
+                                className={`${link} ${
+                                  btnFill && stylesapp[btnFill]
+                                    ? stylesapp[btnFill]
+                                    : ""
+                                } ${
+                                  btnOutline && stylesapp[btnOutline]
+                                    ? stylesapp[btnOutline]
+                                    : ""
+                                } ${
+                                  btnShadow && stylesapp[btnShadow]
+                                    ? stylesapp[btnShadow]
+                                    : ""
+                                }`}
+                                style={{
+                                  backgroundColor:
+                                    btnFill && !stylesapp[btnFill]
+                                      ? btnFill
+                                      : "",
+                                  color: btnfontColor || "",
+                                  fontFamily: inputFont || "",
+                                }}
+                                key={index}
+                              >
+                                <div className={logo}>
+                                  <img
+                                    src={
+                                      socialMediaIcons[
+                                        item.socialMedia?.toLowerCase()
+                                      ] || item.socialMedia
+                                    }
+                                    className={logoImg}
+                                  />
+                                </div>
+                                <p
+                                  style={{ color: InputFontColor || "" }}
+                                  className={para}
+                                >
+                                  {item.title}
+                                </p>
+                              </div>
+                            )
+                        )
+                      : shopArr &&
+                        shopArr.map(
+                          (item, index) =>
+                            item.showShop && (
+                              <div
+                                className={`${link} ${
+                                  btnFill && stylesapp[btnFill]
+                                    ? stylesapp[btnFill]
+                                    : ""
+                                } ${
+                                  btnOutline && stylesapp[btnOutline]
+                                    ? stylesapp[btnOutline]
+                                    : ""
+                                } ${
+                                  btnShadow && stylesapp[btnShadow]
+                                    ? stylesapp[btnShadow]
+                                    : ""
+                                }`}
+                                style={{
+                                  backgroundColor:
+                                    btnFill && !stylesapp[btnFill]
+                                      ? btnFill
+                                      : "",
+                                  color: btnfontColor || "",
+                                  fontFamily: inputFont || "",
+                                }}
+                                key={index}
+                              >
+                                <p
+                                  style={{ color: InputFontColor || "" }}
+                                  className={para}
+                                >
+                                  {item.ShopTitle}
+                                </p>
+                                {/* <p>{item.ShopUrl}</p> */}
+                              </div>
+                            )
+                        )}
+                  </div>
+                </div>
+                <div className={styles.mobfooter}>
+                  <button className={styles.getConnect}>Get Connected</button>
+                  <div className={styles.Mobilelogo}>
+                    <img src={darkLogo} alt="logo" />
+                    <h2>SPARK</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.previewBtn}>
+              <button onClick={() => setMobilePreviw(false)}>
+                <PiEyeSlashLight size={20} /> Close
+              </button>
+            </div>
+          </div>
+        </>
       )}
     </>
   );

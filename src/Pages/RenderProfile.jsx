@@ -156,7 +156,7 @@ const RenderProfile = () => {
   return (
     <div className={stylesrender.main}>
       <div
-        className={`${styles.preview} ${
+        className={`${stylesrender.preview} ${
           theme && stylesapp[theme] ? stylesapp[theme] : ""
         } `}
       >

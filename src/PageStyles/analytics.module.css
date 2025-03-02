@@ -63,7 +63,8 @@
     padding: 20px;
     display: flex;
     align-items: center;
-    /* border: 1px solid black; */
+    justify-content: center;
+    min-height: 200px;
     border-radius: 20px;
 }
 
@@ -114,4 +115,47 @@
     width: 60%;
     padding: 20px;
     border-radius: 20px;
+}
+
+@media only screen and (max-width: 770px){
+    .Overview{
+        display: flex;
+        gap: 10px;
+    }
+    .clickonLink{
+        width: 120px;
+        padding: 0px 20px;
+    }
+    .clickonShop{
+        width: 120px;
+        padding: 0px 20px;
+    }
+    .MixedGraphs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .barGraph{
+        font-size: 10px;
+    }
+    .deviceGraph{
+        /* background-color: #fff; */
+        width: 90%;
+        /* padding: 20px; */
+        /* border-radius: 20px; */
+    }
+    .siteGraph{
+        width: 90%;
+        font-size: 13px;
+    }
+    .trafficbylink{
+        width: 90%;
+        padding: 0px;
+    }
+    .deviceGraph{
+        width: 100%;
+        padding: 20px;
+        font-size: 10px;
+    }
 }

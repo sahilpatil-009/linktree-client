@@ -186,3 +186,36 @@ input[type="checkbox"]{
     height: 50%;
     object-fit: contain;
 }
+
+@media only screen and (max-width: 770px) {
+    .container {
+        width: 60%;
+        height: 500px;
+    }
+    .AddLinks{
+        align-items: center;
+    }
+    .AddLinks div{
+        margin: 20px;
+        width: 90%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #f3f3f1;
+    }
+    .appContainers{
+        display: flex;
+        margin: 20px;
+        gap: 15px;
+        height: 150px;
+        flex-wrap: wrap;
+    }      
+}
+
+@media only screen and (max-width: 440px) {
+    .container {
+        width: 80%;
+    }
+}
