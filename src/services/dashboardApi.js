@@ -1,4 +1,4 @@
-const URL = "http://localhost:8080";
+const URL = "https://linktree-server-s2vd.onrender.com";
 
 // get links data
 export const getLinkData = async (data) => {
