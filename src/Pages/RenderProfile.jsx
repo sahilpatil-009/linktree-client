@@ -9,6 +9,7 @@ import FaceBook from "../assets/media/facebook.png";
 import Twitter from "../assets/media/Xlogo.png";
 import darkLogo from "../assets/darkLogo.svg";
 import { useParams } from "react-router-dom";
+import BoyMoji from "../assets/Memoji BoysDefault .png";
 import { getRenderProfile, increaseLinkCount, increaseShopcount } from "../services/dashboardApi";
 
 const RenderProfile = () => {
