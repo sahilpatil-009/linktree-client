@@ -414,7 +414,7 @@ const Dashboard = () => {
               </h3>
               <p>Congratulations . You got a great response today . </p>
             </div>
-            <button className={styles.shareBtn} onClick={handelShare}>
+            <button className={styles.shareBtn} onClick={handelCopylink}>
               <CiShare2 size={20} />
               Share
             </button>
